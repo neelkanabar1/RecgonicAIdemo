@@ -1,0 +1,100 @@
+[
+	{
+		"status": "SUCCESS",
+		"system_status_code": "200",
+		"message": "",
+		"document_type": "IND-KYC-002",
+		"format": "AADHAAR-FRONT",
+		"result": {
+			"document_id_number": {
+				"value": "4724 6897 5835"
+			},
+			"old_id_number": {
+				"value": ""
+			},
+			"name": {
+				"value": "ANAND TIWARI"
+			},
+			"parent_or_spouse": {
+				"value": ""
+			},
+			"father_name": {
+				"value": ""
+			},
+			"spouse_name": {
+				"value": ""
+			},
+			"mother_name": {
+				"value": ""
+			},
+			"surname": {
+				"value": ""
+			},
+			"address": {
+				"value": ""
+			},
+			"pincode": {
+				"value": ""
+			},
+			"state": {
+				"value": ""
+			},
+			"nationality": {
+				"value": ""
+			},
+			"date_of_birth": {
+				"value": ""
+			},
+			"place_of_birth": {
+				"value": ""
+			},
+			"age": {
+				"value": ""
+			},
+			"gender": {
+				"value": "MALE"
+			},
+			"place_of_issue": {
+				"value": ""
+			},
+			"old_date_of_issuance": {
+				"value": ""
+			},
+			"date_of_issue": {
+				"value": ""
+			},
+			"date_of_expiry": {
+				"value": ""
+			},
+			"pp_file_number": {
+				"value": ""
+			},
+			"photo": {
+				"value": "https://storage.googleapis.com/recognic-india//tmp/2022-06-07-094839D2s.jpeg"
+			},
+			"signature": {
+				"value": ""
+			},
+			"issuing_authority": {
+				"value": ""
+			}
+		},
+		"num_expected_fields": 6,
+		"num_extracted_fields": 5,
+		"fields_not_detected": [
+			"date_of_birth"
+		],
+		"columns": [],
+		"fields": [
+			"name",
+			"document_id_number",
+			"father_name",
+			"spouse_name",
+			"date_of_birth",
+			"photo",
+			"gender"
+		],
+		"response_time": "38.072827",
+		"request_origin": "Console"
+	}
+]
