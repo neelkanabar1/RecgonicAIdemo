@@ -100,8 +100,6 @@ function render() {
   document
     .getElementById("myFile")
     .addEventListener("change", handleFileSelect, false);
-  generateTable();
-  generateJSON();
 }
 
 function handleFileSelect() {
@@ -113,6 +111,13 @@ function handleFileSelect() {
     ).style.backgroundImage = `url(${uploaded_image})`;
   });
   reader.readAsDataURL(this.files[0]);
+  
+  removeUploadIcon()
+  generateTable();
+  generateJSON();
+}
+function removeUploadIcon(){
+  document.getElementById('upload-icon').style.display = 'none'
 }
 function generateTable() {
   const data = response.result;
@@ -121,7 +126,7 @@ function generateTable() {
 
   for (let [key, value] of Object.entries(data)) {
     let __td__ = document.createElement("td");
-    __td__.classList.add("tg-0lax");
+    __td__.classList.add("color-text");
     __td__.innerHTML = value.value === "" ? "null" : value.value;
 
     __tr__.appendChild(__td__);
@@ -141,8 +146,4 @@ function generateJSON() {
 function toggleDisplay() {
   document.getElementById("fileContent").classList.toggle("hidden");
   document.getElementById("table").classList.toggle("hidden");
-}
-// function handleFileLoad(event){
-//   console.log(event);
-//   document.getElementById('fileContent').textContent = event.target.result;
-// }
+}// function handleFileLoad(event){//   console.log(event);//   document.getElementById('fileContent').textContent = event.target.result;// }
